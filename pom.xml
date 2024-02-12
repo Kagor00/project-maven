@@ -91,7 +91,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <addClassPath>true</addClassPath>
+                            <addClasspath>true</addClasspath>
 <!--                            <classPathPrefix>libs</classPathPrefix>-->
                             <mainClass>
                                 org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader
