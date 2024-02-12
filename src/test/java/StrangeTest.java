@@ -1,13 +1,13 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
 
 public class StrangeTest {
 
     @Test
-    public void shouldPass() {
-        assertTrue(true, "This test should pass");
+    public void shouldFail() {
+        fail("By design");
     }
 
 }
