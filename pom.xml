@@ -102,7 +102,7 @@
                             <mainClass>
                                 org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader
                             </mainClass>
-                        </manifest>
+                       </manifest>
                         <manifestEntries>
                             <Rsrc-Main-Class>com.javarush.games.racer.RacerGame</Rsrc-Main-Class>
                             <Class-Path>./</Class-Path>
@@ -113,6 +113,7 @@
 
             <!-- Turn off StrangeTest-->
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
