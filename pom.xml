@@ -40,7 +40,6 @@
         </dependency>
 
 
-
     </dependencies>
 
     <build>
@@ -84,24 +83,27 @@
                 </executions>
             </plugin>
 
-            <!-- Settings MANIFEST.MF (Class-Path, Main-Class і Rsrc-Main-Class) -->
+            <!-- Settings MANIFEST.MF (Class-Path, Main-Class, Rsrc-Main-Class) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
                 <configuration>
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-<!--                            <classPathPrefix>libs</classPathPrefix>-->
+                            <!--<classPathPrefix>libs</classPathPrefix>-->
                             <mainClass>
                                 org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader
                             </mainClass>
                         </manifest>
+                        <manifestEntries>
+                            <Rsrc-Main-Class>com.javarush.games.racer.RacerGame</Rsrc-Main-Class>
+                            <Class-Path>./</Class-Path>
+                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
-
 </project>
