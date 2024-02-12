@@ -9,5 +9,4 @@ public class StrangeTest {
     public void shouldFail() {
         fail("By design");
     }
-
 }
